@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="cinos.css">
+    <title>Messages</title>
+  </head>
+  <body>
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.21.7.js"></script>
+    <script src="app.js"></script>
+
+    <h1>Chat room</h1>
+    <div>
+      <p>Point your device in one of the two differnet directions. 
+      </p>
+    </div>
+
+    <h4>Current channel:</h4>
+    <p id="heading">
+    </p>
+
+    <input id="messageBox" type="text" onchange="sendMsg(this.value)"></input>
+    <input type="submit"></input>
+
+    <div id="messageContainer">
+      <span id="east_ch">
+          <h2>Channel East</h2>
+      </span>
+      <span id="west_ch">
+          <h2>Channel West</h2>
+      </span>
+    </div>
+    
+  </body>
+</html>
